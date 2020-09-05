@@ -6,12 +6,21 @@ class AnalogClock {
         //Creates a new scanner for user input
         Scanner scanner = new Scanner(System.in);
 
-        //Reads ints from user
+        int degrees = scanner.nextInt();
+        int start;
+        int min;
+        int end;
 
 
-        /*
-         *  your code goes here
-         */
+        //finds the hour it starts at
+        start = degrees / 30;
+        min = degrees / 6;
+        
+
+        //prints the time.
+        System.out.println(start + " " + min);
+
+
 
         // closing the scanner object
         scanner.close();
