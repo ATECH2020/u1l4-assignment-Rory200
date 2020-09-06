@@ -14,13 +14,14 @@ class AnalogClock {
 
 
         //finds the hour it starts at
-        start = degrees / 30;
-        min = (degrees / 6) - (degrees % 30) - 1;
-        end = min * 6;
+        start = (degrees % 30);
+        min = (start * 6) * 2;
+        
+       
         
 
         //prints the time.
-        System.out.println(end);
+        System.out.println(min);
 
 
 
