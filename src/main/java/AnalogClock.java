@@ -9,7 +9,7 @@ class AnalogClock {
         int degrees = scanner.nextInt();
         int start;
         int min;
-        int end;
+        
       
 
 
@@ -21,7 +21,7 @@ class AnalogClock {
         
 
         //prints the time.
-        System.out.println(min);
+        System.out.print(min);
 
 
 
