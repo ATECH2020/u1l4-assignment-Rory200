@@ -10,15 +10,17 @@ class AnalogClock {
         int start;
         int min;
         int end;
+      
 
 
         //finds the hour it starts at
         start = degrees / 30;
-        min = degrees / 6;
+        min = (degrees / 6) - (degrees % 30) - 1;
+        end = min * 6;
         
 
         //prints the time.
-        System.out.println(start + " " + min);
+        System.out.println(end);
 
 
 
